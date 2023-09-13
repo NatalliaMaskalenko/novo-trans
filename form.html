@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css" />
+        <title>Document</title>
+    </head>
+<body>
+    <div class="container">
+        <header>
+            <p class="logo">NoVo Trans</p>
+            <nav>
+                <button type="button">Наши услуги</button>
+                <ul>
+                    <li><a href="">автомобильные перевозки</a></li>
+                    <li><a href="">автомобильные перевозки</a></li>
+                    <li><a href="">автомобильные перевозки</a></li>
+                    <li><a href="">автомобильные перевозки</a></li>
+                </ul>
+                <a href="#footer">Контакты</a>
+                <a href="./about.html">О нас</a>
+                <a href="./career.html">Работа/Карьера</a>
+                <a href="./calculation.html">Получить расчёт</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Расчёт стоимости</h1>
+            <ul>
+                <li>личные данные</li>
+                <li>направления</li> 
+                <li>параметры груза</li> 
+                <li>загрузка</li> 
+                <li>условия поставки</li> 
+                <li>комментарий</li>                                 
+            </ul>
+            <div class="personal-data__container">
+                <form name="personal-data__form" autocomplete="on" >
+                    <label>
+                        Name
+                        <input type="text" name="username" autofocus />
+                    </label>
+
+                    <label>
+                        E-mail
+                        <input type="email" name="email" autofocus />
+                    </label>
+
+                    <label>
+                        Telefon
+                        <input type="tel" name="telefon" autofocus />
+                    </label>
+    
+                    <label>
+                        Firma
+                        <input type="text" name="firmaname" autofocus />
+                    </label>           
+                                   
+                    <button type="submit">Далее</button>                    
+                  </form>
+                  <p>Вы спешите?  <br> Нажмите на «Краткую форму»</p>                  
+                  <button>КРАТКАЯ ФОРМА</button>
+            </div>
+
+            <div class="route__container">
+                <form name="route__form" autocomplete="on" >
+                    <label>
+                        Откуда
+                        <input type="text" name="from" autofocus />
+                    </label>
+
+                    <label>
+                        Куда
+                        <input type="text" name="to" autofocus />
+                    </label>
+
+                    <label>
+                        Места таможенного оформления
+                        <input type="text" name="customs" autofocus />
+                    </label>                        
+                                   
+                    <button type="submit">Далее</button>                    
+                  </form>
+                  <p>Вы спешите?  <br> Нажмите на «Краткую форму»</p>
+                  
+                  <button>КРАТКАЯ ФОРМА</button>
+            </div>
+
+            <div class="cargo-parameters__container">
+                <form name="cargo-parameters__form" autocomplete="on" >
+                    <label for="cargo">Наименование груза</label>
+                        <select name="cargo" id="cargo">
+                            <optgroup label="baustoffe">
+                                <option value="baustoffe-1">Baustoffe-1</option>
+                                <option value="baustoffe-2">Baustoffe-2</option>
+                                <option value="baustoffe-3">Baustoffe-3</option>
+                            </optgroup>
+                            <optgroup label="industrie">
+                               <option value="industrie-1">Industrie-1</option>
+                               <option value="industrie-2">Industrie-2</option>
+                               <option value="industrie-3">Industrie-3</option>
+                            </optgroup>
+                            <optgroup label="paletten">
+                                <option value="paletten-1">Paletten-1</option>
+                                <option value="paletten-2">Paletten-2</option>                                
+                             </optgroup>
+                        </select>
+
+                    <label>
+                        Вес груза (брутто)
+                        <input type="number" name="weight" autofocus />
+                    </label>
+
+                    <label>
+                        Объём груза
+                        <input type="number" name="volume" autofocus />
+                    </label>                        
+                                   
+                    <button type="submit">Далее</button>                    
+                  </form>
+                  <p>Вы спешите?  <br> Нажмите на «Краткую форму»</p>
+                  
+                  <button>КРАТКАЯ ФОРМА</button>
+            </div>
+
+            <div class="transport-loading__container">
+                <form name="transport-loading__form" autocomplete="on" >
+                    <label for="type-transport">Тип транспорта</label>
+                    <input type="text" name="type-transport" id="type-transport" list="types" />
+                    <datalist id="types">
+                      <option>Самосвал</option>
+                      <option>Еврофура</option>
+                      <option>Самосвал</option>
+                      <option>Еврофура</option>
+                    </datalist> 
+
+                    <label>
+                        Выбрать дату готовности груза
+                        <input type="date" />                      
+                    </label>
+
+                    <label>
+                        Желаемая дата поставки
+                        <input type="date" />                      
+                    </label>                        
+                                   
+                    <button type="submit">Далее</button>                    
+                  </form>
+                  <p>Вы спешите?  <br> Нажмите на «Краткую форму»</p>
+                  
+                  <button>КРАТКАЯ ФОРМА</button>
+            </div>
+            <div class="comment__container">
+                <form name="comment__form" autocomplete="on" >
+                    <label for="type-transport">Тип транспорта</label>
+                    <input type="text" name="type-transport" id="type-transport" list="types" />
+                    <datalist id="types">
+                      <option>Самосвал</option>
+                      <option>Еврофура</option>
+                      <option>Самосвал</option>
+                      <option>Еврофура</option>
+                    </datalist> 
+
+                    <label>
+                        Выбрать дату готовности груза
+                        <input type="date" />                      
+                    </label>
+
+                    <label>
+                        Желаемая дата поставки
+                        <input type="date" />                      
+                    </label>                        
+                                   
+                    <button type="submit">Далее</button>                    
+                  </form>
+                  <p>Вы спешите?  <br> Нажмите на «Краткую форму»</p>
+                  
+                  <button>КРАТКАЯ ФОРМА</button>
+            </div>
+
+        </main>
+    </div>
+    
+</body>
+</html>
