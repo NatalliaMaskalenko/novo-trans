@@ -30,8 +30,7 @@
                 <li>личные данные</li>
                 <li>направления</li> 
                 <li>параметры груза</li> 
-                <li>загрузка</li> 
-                <li>условия поставки</li> 
+                <li>загрузка</li>                 
                 <li>комментарий</li>                                 
             </ul>
             <div class="personal-data__container">
@@ -63,6 +62,7 @@
             </div>
 
             <div class="route__container">
+                <button type="button"></button>
                 <form name="route__form" autocomplete="on" >
                     <label>
                         Откуда
@@ -87,6 +87,7 @@
             </div>
 
             <div class="cargo-parameters__container">
+                <button type="button"></button>
                 <form name="cargo-parameters__form" autocomplete="on" >
                     <label for="cargo">Наименование груза</label>
                         <select name="cargo" id="cargo">
@@ -124,6 +125,7 @@
             </div>
 
             <div class="transport-loading__container">
+                <button type="button"></button>
                 <form name="transport-loading__form" autocomplete="on" >
                     <label for="type-transport">Тип транспорта</label>
                     <input type="text" name="type-transport" id="type-transport" list="types" />
@@ -150,16 +152,14 @@
                   
                   <button>КРАТКАЯ ФОРМА</button>
             </div>
+
             <div class="comment__container">
+                <button type="button"></button>
                 <form name="comment__form" autocomplete="on" >
-                    <label for="type-transport">Тип транспорта</label>
-                    <input type="text" name="type-transport" id="type-transport" list="types" />
-                    <datalist id="types">
-                      <option>Самосвал</option>
-                      <option>Еврофура</option>
-                      <option>Самосвал</option>
-                      <option>Еврофура</option>
-                    </datalist> 
+                    <label>
+                        Ваш комментарий
+                        <textarea name="comment" rows="5"></textarea>
+                      </label>
 
                     <label>
                         Выбрать дату готовности груза
@@ -167,16 +167,63 @@
                     </label>
 
                     <label>
-                        Желаемая дата поставки
-                        <input type="date" />                      
-                    </label>                        
-                                   
-                    <button type="submit">Далее</button>                    
-                  </form>
-                  <p>Вы спешите?  <br> Нажмите на «Краткую форму»</p>
-                  
-                  <button>КРАТКАЯ ФОРМА</button>
+                        Добавить файл 
+                        <input type="file" name="file">
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="agreement" value="positive" checked />
+                        Я согласен с условиями Политики конфиденциальности и Обработки персональных данных. 
+                    </label>       
+                              
+                    <button type="submit">Получить расчёт</button>                    
+                  </form>                 
             </div>
+
+            <div class="short-form__container">
+                <button type="button"></button>
+                <form name="short-form__form" autocomplete="on" >
+                    <label>
+                        Name
+                        <input type="text" name="username" autofocus />
+                    </label>
+
+                    <label>
+                        E-mail
+                        <input type="email" name="email" autofocus />
+                    </label>
+
+                    <label>
+                        Telefon
+                        <input type="tel" name="telefon" autofocus />
+                    </label>
+    
+                    <label>
+                        Firma
+                        <input type="text" name="firmaname" autofocus />
+                    </label> 
+
+                    <label>
+                        Ваш комментарий
+                        <textarea name="comment" rows="5"></textarea>
+                    </label>
+
+                    <label>
+                        Добавить файл 
+                        <input type="file" name="file">
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="agreement" value="positive" checked />
+                        Я согласен с условиями Политики конфиденциальности и Обработки персональных данных. 
+                    </label>       
+                              
+                    <button type="submit">Получить расчёт</button>                    
+                  </form> 
+
+                  <p>Полную информацию можно заполнить <br>  нажимая на кнопку «Полная форма»</p>  
+                  <a href="">полная форма</a>           
+            </div>          
 
         </main>
     </div>
