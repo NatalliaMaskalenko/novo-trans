@@ -4,11 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
 </head>
 
 <body>
     <div>
+        <header>
+            <nav>
+                <a class="logo" href="/index.html">NoVo Trans</a>
+                <button type="button">Наши услуги</button>
+                <ul>
+                    <li><a href="./services.html">автомобильные перевозки</a></li>
+                    <li><a href="./services.html">автомобильные перевозки</a></li>
+                    <li><a href="./services.html">автомобильные перевозки</a></li>
+                    <li><a href="./services.html">автомобильные перевозки</a></li>
+                </ul>
+                <a href="#footer">Контакты</a>
+                <a href="./about.html">О нас</a>
+                <a href="./career.html">Работа/Карьера</a>
+                <a href="./calculation.html">Получить расчёт</a>
+            </nav>
+        </header>
         <main>
             <h1>DATENSCHUTZ</h1>
             <ol>
@@ -536,6 +556,51 @@
                 </li>
             </ol>           
         </main>
+        <footer class="footer">
+            <h2>Связаться с нами</h2>
+            <p>Оставьте заявку, чтобы наш менеджер связался с вами или получите расчет, <a href="./form.html">заполнив форму</a> </p>
+            <form name="communication_form" autocomplete="on" novalidate>
+                <label>
+                    Name
+                    <input type="text" name="username" autofocus />
+                </label>
+
+                <label>
+                    Firma
+                    <input type="text" name="firmaname" autofocus />
+                </label>
+
+                <label>
+                    E-mail
+                    <input type="email" name="email" autofocus />
+                </label>
+              
+                <label>
+                    Telefon
+                    <input type="tel" name="telefon" autofocus />
+                </label>
+
+                <label>
+                    Nachricht
+                    <textarea name="request" rows="5" autofocus></textarea>
+                </label>
+
+                
+                <label>
+                    <input type="checkbox" name="color" value="red" />
+                        Согласие на обработку персональных данных
+                </label>
+              
+                <button type="submit">Отправить заявку</button>
+              </form>
+            <p>Ваш запрос отправлен</p>
+            <b>Свяжитесь с нами</b>
+            <a href="">info@gthrees.com</a>
+            <a href="">+375(17)252-22-25</a>
+            <a href="./datenschutz.html">Datenschutz</a>
+            <a href="./impressum.html">Impressum</a>
+            <p>&#169; 2023, NoVo Trans</p>
+        </footer>
     </div>
 </body>
 </html>
